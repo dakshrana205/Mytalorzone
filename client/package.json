@@ -2,11 +2,12 @@
   "name": "client",
   "version": "0.0.0",
   "scripts": {
-    "start": "react-scripts start",
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
-  },
+  "start": "vite",
+  "dev": "vite",
+  "build": "vite build",
+  "serve": "vite preview"
+}
+,
   "dependencies": {
     "@stripe/react-stripe-js": "^1.7.0",
     "@stripe/stripe-js": "^1.22.0",
