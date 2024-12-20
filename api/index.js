@@ -49,5 +49,5 @@ app.get("/", (req, res) => {
 app.use(formatCelebrateErrors)
 
 app.listen(process.env.PORT || 5000, () => {
-	console.log(`Listening on port ${process.env.PORT || 1000}`)
+	console.log(`Listening on port ${process.env.PORT || 2000}`)
 })

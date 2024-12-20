@@ -1,4 +1,5 @@
 const router = require("express").Router()
+const stripe = require("stripe")(process.env.STRIPE_SECRET)
 const ObjectId = require('mongoose').Types.ObjectId
 
 const { verifyToken } = require('../middlewares/verifyAuth')

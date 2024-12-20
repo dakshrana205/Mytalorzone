@@ -1,16 +1,9 @@
 {
- "scripts": {
-  "start": "concurrently \"npm run server\" \"npm run client\"",
-  "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
-  "server": "cd api && npm start",
-  "server:dev": "cd api && npm run dev",
-  "client": "cd client && npm start",
-  "client:dev": "cd client && npm run dev"
+  "scripts": {
+  "dev": "concurrently \"npm run dev --prefix api\" \"npm run dev --prefix client\""
 },
- "devDependencies": {
-  "concurrently": "^9.1.0"
- },
- "dependencies": {
-  "vite": "^6.0.5"
- }
+
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
 }
